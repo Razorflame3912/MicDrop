@@ -1,4 +1,6 @@
 # MicDrop
+Mansour Elsharawy, Irene Lam, Carol Pan
+
 ## QuickSort Timing Lab
 
 
@@ -16,8 +18,7 @@ O(n\*n) - Quick Sort will be called n times, with n comparisons/swaps collective
 
 Average Case is in between.
 
-### Pivot point at the extreme
-(1st element are cuurent array)
+### Pivot point as the largest or smallest number of the array
 
 Best Case: *sorted in correct order*
 
@@ -27,9 +28,21 @@ Worst Case: *sorted in reverse order*
 
 O(n\*n) - Quick Sort is called n times, and performs n swaps/comparisons collectively
 
+### General Case
+
+Best Case: When the pivot partitions the array into two parts of similar, if not the same, sizes. 
+Run Time Analysis: Divide and conquer on each half would be log2(n), and partition requires linear time, so the total time would be O(nlogn)
+
+Worst Case: When the pivot splits the array into parts of size 0 and array.length - 1. 
+Run Time Analysis: Each recursive call would be the size of the previous list minus one. But because partition also runs in linear time, the algorithm would have a runtime of O(n^2)
+ 
+
+
 ## Method of Testing:
 
-We ran QuickSort on arrays of different size n in multiple batches, and averaged the results
+1 - Added a general, unprinted test that "warms up" the file such that it prevents just-in-time optimization (JIT)
+2 - Ran QuickSort on arrays of different size n (1, 10, 100, 1000, 10000, 100000) in multiple 1000 element batches
+3 - Averaged the results.
 
 ## Time: 
 
