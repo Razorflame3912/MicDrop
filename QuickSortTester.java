@@ -14,12 +14,12 @@
 
   Mean execution times for dataset of size n:
   Batch size: 1000
-  n=1       time: 0.0 ms / ____ns
-  n=10      time: 0.0 ms / ____ns
-  n=100     time: 0.003 ms / ____ns
-  n=1000    time: 0.048 ms / ____ns
-  n=10000   time: 0.522 ms / ____ns
-  n=100000  time: 7.525 ms / ____ns
+  n=1       time: 0.0 ns
+  n=10      time: 0.0 ns
+  n=100     time: 0.003 ns
+  n=1000    time: 0.048 ns 
+  n=10000   time: 0.522 ns
+  n=100000  time: 7.525 ns
   
   ANALYSIS:
   Based on the curve of the above data when graphed, the algorithm most closely resembles a run time of nlogn, hence reaffirming our speculations.
