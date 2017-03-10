@@ -46,5 +46,10 @@ Run Time Analysis: Each recursive call would be the size of the previous list mi
 
 ## Time: 
 
-(summary, more detailed in QuickSort Tester block comment)
+n = 1:      5.733 ns
+n = 10:     506.055 ns
+n = 100:    8322.598 ns
+n = 1000:   105081.703 ns
+n = 10000:  1215392.038 ns
+n = 100000: 19174942.643 ns
 
